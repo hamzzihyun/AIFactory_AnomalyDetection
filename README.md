@@ -5,6 +5,12 @@ https://aifactory.space/competition/detail/2226
 ## Team member
 정지현, 위성진
 
+## Solution Overview
+- Each type has strong linear correlation: Anomaly detection by self-supervised linear regression
+- Use Max(abs(error)) from train data  as the threshold of each type
+- Test samples with higher error than threshold is labeled as anomaly
+
+
 ## File Structure
 ```
 ├── README.md
@@ -14,6 +20,7 @@ https://aifactory.space/competition/detail/2226
 dataset.zip
 
 -download from https://aifactory.space/competition/data/2226
+
 
 ## Train & Inference
 1. Download dataset.zip from the link above, and unzip it
